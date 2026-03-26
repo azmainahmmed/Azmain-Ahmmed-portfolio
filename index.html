@@ -652,7 +652,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         ["footer_text", config.footer_text || defaultConfig.footer_text]
       ]);
     }
+<section id="contact">
+  <div class="contact-container">
 
+    <h2>Contact Me</h2>
+    <p>Have a project in mind? Let's talk!</p>
+
+    <form action="https://formspree.io/f/yourID" method="POST">
+
+      <input type="text" name="name" placeholder="Your Name" required>
+
+      <input type="email" name="email" placeholder="Your Email" required>
+
+      <textarea name="message" placeholder="Your Message" required></textarea>
+
+      <!-- Hidden fields -->
+      <input type="hidden" name="_subject" value="New Portfolio Message">
+      <input type="hidden" name="_captcha" value="false">
+
+      <button type="submit">Send Message</button>
+
+    </form>
+
+  </div>
+</section>
     if (window.elementSdk) {
       window.elementSdk.init({
         defaultConfig,
