@@ -499,45 +499,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <h2>Send Me a Message</h2>
 
+<h3>Send Me a Message</h3>
+
 <form action="https://formspree.io/f/xnjoqgdg" method="POST">
+  
+  <p>Name:</p>
+  <input type="text" name="name" required>
 
-  <input type="text" name="name" placeholder="Your Name" required>
+  <p>Email:</p>
+  <input type="email" name="email" required>
 
-  <input type="email" name="email" placeholder="Your Email" required>
+  <p>Message:</p>
+  <textarea name="message" required></textarea>
 
-  <textarea name="message" placeholder="Your Message" required></textarea>
-
-  <!-- hidden -->
-  <input type="hidden" name="_subject" value="New Client Message from Portfolio">
-
+  <br><br>
   <button type="submit">Send Message</button>
 
- form {
-  max-width: 500px;
-  margin-top: 20px;
-}
-
-form input,
-form textarea {
-  width: 100%;
-  padding: 12px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-}
-
-form button {
-  background: black;
-  color: white;
-  padding: 12px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-form button:hover {
-  background: #333;
-}
+</form>
 
 </form>
    </section><!-- Footer -->
